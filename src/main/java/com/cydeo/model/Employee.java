@@ -15,7 +15,6 @@ import java.time.LocalDate;
 
 public class Employee {
 
-
 //    @NotNull        --->    Field shouldn't be null
 //    @NotEmpty       --->    Field shouldn't be ""
 //    @NotBlank       --->    Field shouldn't be "       "
@@ -27,6 +26,9 @@ public class Employee {
     @NotBlank
     @Size(max = 12, min = 2)
     private String firstName;
+
+    //    @NotBlank
+//    @Size(max = 12, min = 2)
     private String lastName;
 
     // Thymeleaf accepts yyyy-MM-dd, but LocalDate accepts mm-dd-yyyy  -   yyyy-dd-mm
@@ -48,7 +50,6 @@ public class Employee {
     private String city;
     private String state;
     private String zipCode;
-
 
 
 }
